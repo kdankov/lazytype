@@ -1,0 +1,65 @@
+body { background: url(images/handmadepaper.png) left top repeat; }
+a { color: #444; }
+
+#wrapper {
+	width: 80%;
+	max-width: 800px;
+	margin: 0 auto 1.618em auto;
+}
+
+#header, #footer { padding: 1.618em; }
+
+#container {	
+	padding: 2.618em;
+	border: solid #CCC;
+	border-width: 4px 0;
+}
+
+#welcome {
+	padding: 2.618em;
+	border-top: 4px solid #CCC;
+}
+
+#welcome p:last-child { padding-bottom: 0; }
+#header { text-align: center; }
+
+#header #site-title a { display: block; text-decoration: none; color: #333; text-shadow: #FFF 2px 2px 0; }
+#header #site-title a:hover { color: #000; }
+
+#header #access { }
+#header #access .menu { }
+#header #access .menu ul { padding: 0.3em 0 0 0; }
+#header #access .menu ul li { display: inline-block; list-style: outside none; padding: 0; }
+#header #access .menu ul li a { text-decoration: none; color: #666; }
+
+#footer { overflow: hidden; color: #888; padding-top: 0.809em;  }
+#footer a { text-decoration: none; color: #888; }
+#footer a:hover { color: #111; text-decoration: underline; }
+#footer #site-generator { float: right; }
+
+.entry { position: relative; }
+.entry .entry-content,
+.entry .entry-header { margin-left: 25%; }
+
+.entry .entry-header a { text-decoration: none; }
+.entry .entry-header a:hover { color: #000; text-decoration: underline; }
+
+.entry .entry-header .meta { width: 20%; text-align: right; position: absolute; left: 0; top: 0; padding-top: 3.12em; color: #888; }
+.entry .entry-header .meta .day-of-the-week { display: block; }
+
+.entry .entry-content { text-shadow: #FFF 1px 1px 1px; }
+
+.home #header { padding-left: 0; padding-right: 0; padding-bottom: 0; }
+.home #header #site-description { font-size: 1.8em; padding-bottom: 1em; border-bottom: 1px solid #CCC; text-shadow: #FFF 1px 1px 0; }
+.home #header #access .menu ul li { padding: 0.4045em; }
+.home #header #access .menu ul li a:hover { color: #111; text-decoration: underline; }
+
+.single #header { padding: 0.809em 0.809em 0.4045em 0.809em; text-align: left; overflow: hidden; }
+.single #header #site-title { font-size: 1.618em; float: left; }
+.single #header #site-description { display: none; }
+.single #header #access { float: right; }
+
+.single .entry { margin-top: 1.618em; }
+.single .entry .entry-header { margin-left: 0; padding-bottom: 0; margin-bottom: 1.618em; border-bottom: 2px solid #CCC; text-shadow: #FFF 1px 1px 1px; }
+.single .entry .entry-header .meta { padding-top: 6.75em; }
+
