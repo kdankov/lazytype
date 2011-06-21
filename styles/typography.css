@@ -31,7 +31,7 @@ h4 { font-size: 1.236em; }
 h5 { font-size: 1.136em; font-weight: bold; }
 h6 { font-size: 1.0em; font-weight: bold; }
 
-p, ol, ul { padding: 0 0 1.618em 0; }
+p, ol, ul { padding: 0 0 1.5em 0; }
 li { display: list-item; padding-bottom: 0.4045em; }
 li:last-child { padding-bottom: 0; }
 

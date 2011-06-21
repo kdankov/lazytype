@@ -2,7 +2,7 @@
 
 	<?php if( is_home() ){ ?>
 		<div id="welcome">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			<?php dynamic_sidebar( 'homepage' ); ?>
 		</div>
 	<?php } ?>
 
@@ -19,10 +19,10 @@
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class="entry">
 					<div class="entry-header">
-						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						<div class="meta">
-							<span class="day-of-the-week"><?php the_time('l'); ?>,</span> <span class="date"><?php the_time('F jS'); ?></span> <span class="time">at <?php the_time(); ?></span>
-						</div>
+						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+					</div>
+					<div class="meta">
+						<span class="day-of-the-week"><?php the_time('l'); ?>,</span> <span class="date"><?php the_time('F jS'); ?></span> <span class="time">at <?php the_time(); ?></span>
 					</div>
 					<div class="entry-content">
 						<?php the_excerpt(); ?>

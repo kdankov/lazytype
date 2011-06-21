@@ -1,53 +1,46 @@
 body { background: url(images/handmadepaper.png) left top repeat; }
 a { color: #444; }
 
-#wrapper {
-	width: 80%;
-	max-width: 800px;
-	margin: 0 auto 1.618em auto;
-}
+#wrapper { width: 80%; max-width: 800px; margin: 0 auto 1.618em auto; }
 
-#header, #footer { padding: 1.618em; }
+#header { padding: 1.618em; }
 
-#container {	
-	padding: 2.618em;
-	border: solid #CCC;
-	border-width: 4px 0;
-}
+#container { padding: 2.618em; border: solid #CCC; border-width: 4px 0; }
 
-#welcome {
-	padding: 2.618em;
-	border-top: 4px solid #CCC;
-}
-
-#welcome p:last-child { padding-bottom: 0; }
 #header { text-align: center; }
 
 #header #site-title a { display: block; text-decoration: none; color: #333; text-shadow: #FFF 2px 2px 0; }
 #header #site-title a:hover { color: #000; }
 
-#header #access { }
-#header #access .menu { }
-#header #access .menu ul { padding: 0.3em 0 0 0; }
-#header #access .menu ul li { display: inline-block; list-style: outside none; padding: 0; }
-#header #access .menu ul li a { text-decoration: none; color: #666; }
+#header .menu { padding: 0.3em 0 0 0; }
+#header .menu li { display: inline-block; list-style: outside none; padding: 0.4045em 0;  }
+#header .menu li a { text-decoration: none; padding: 0 0.809em 0 0.409em; color: #666; border-right: 1px solid #CCC;  }
+#header .menu li:last-child a { border-right: none; }
 
-#footer { overflow: hidden; color: #888; padding-top: 0.809em;  }
+#footer { overflow: hidden; color: #888; }
 #footer a { text-decoration: none; color: #888; }
 #footer a:hover { color: #111; text-decoration: underline; }
 #footer #site-generator { float: right; }
+#footer .widgets { padding: 1.618em; border-bottom: 4px solid #CCC }
+#footer #colophon { padding: 0.809em 1.618em; }
+#footer #colophon a { font-size: 0.809em; }
 
-.entry { position: relative; }
-.entry .entry-content,
-.entry .entry-header { margin-left: 25%; }
+#welcome { padding: 2.618em; border-top: 4px solid #CCC; overflow: hidden; }
+#welcome p:last-child { padding-bottom: 0; }
 
+#welcome .widget { width: 45%; float: left; }
+#welcome .widget:first-child { margin-right: 10%; }
+
+.entry { overflow: hidden; }
+
+.entry .entry-header { margin-left: 25.888%; }
 .entry .entry-header a { text-decoration: none; }
 .entry .entry-header a:hover { color: #000; text-decoration: underline; }
 
-.entry .entry-header .meta { width: 20%; text-align: right; position: absolute; left: 0; top: 0; padding-top: 3.12em; color: #888; }
-.entry .entry-header .meta .day-of-the-week { display: block; }
+.entry .meta { width: 21.888%; margin-right: 4%; float: left; text-align: right; color: #888; }
+.entry .meta .day-of-the-week { display: block; }
 
-.entry .entry-content { text-shadow: #FFF 1px 1px 1px; }
+.entry .entry-content { width: 74.112%; float: left; text-shadow: #FFF 1px 1px 1px; }
 
 .home #header { padding-left: 0; padding-right: 0; padding-bottom: 0; }
 .home #header #site-description { font-size: 1.8em; padding-bottom: 1em; border-bottom: 1px solid #CCC; text-shadow: #FFF 1px 1px 0; }

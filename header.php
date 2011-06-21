@@ -36,8 +36,6 @@
 			</<?php echo $heading_tag; ?>>
 			<div id="site-description"><?php bloginfo( 'description' ); ?></div>
 		</div>
-		<div id="access" role="navigation">
-			<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
-		</div>
+		<?php wp_nav_menu( array( 'container_class' => 'navigation', 'theme_location' => 'header' ) ); ?>
 	</div>
 	<div id="main">
