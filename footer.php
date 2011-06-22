@@ -1,11 +1,14 @@
 	</div>
 
 	<div id="footer" role="contentinfo">
-		<div class="widgets">
-			<?php dynamic_sidebar( 'footer' ); ?>
-		</div>
+		<?php if(false){ ?>
+			<div class="widgets">
+				<?php dynamic_sidebar( 'footer' ); ?>
+			</div>
+		<?php } ?>
 		<div id="colophon">
-			Konstantin Dankov · <a href="http://twitter.com/kdankov">@kdankov</a>
+			<a href="http://twitter.com/kdankov">Konstantin Dankov · @kdankov</a><br>
+			<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Licensed under Creative Commons - Attribution-NonCommercial-ShareAlike 3.0</a>
 			<div id="site-generator">
 				<?php do_action( 'twentyten_credits' ); ?>
 				<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>

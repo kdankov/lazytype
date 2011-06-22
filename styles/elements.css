@@ -1,20 +1,20 @@
-body { background: url(images/handmadepaper.png) left top repeat; }
+body { background: url(images/handmadepaper.png) left top repeat; color: #444; }
 a { color: #444; }
 
 #wrapper { width: 80%; max-width: 800px; margin: 0 auto 1.618em auto; }
 
-#header { padding: 1.618em; }
-
 #container { padding: 2.618em; border: solid #CCC; border-width: 4px 0; }
 
-#header { text-align: center; }
-
+#header { text-align: center; overflow: hidden; padding: 1.618em 0 0 0; }
+#header #site-title { font-size: 6.854em; line-height: 1em; }
 #header #site-title a { display: block; text-decoration: none; color: #333; text-shadow: #FFF 2px 2px 0; }
 #header #site-title a:hover { color: #000; }
+#header #site-description { font-size: 1.8em; padding-bottom: 1em; border-bottom: 1px solid #CCC; text-shadow: #FFF 1px 1px 0; }
 
 #header .menu { padding: 0.3em 0 0 0; }
-#header .menu li { display: inline-block; list-style: outside none; padding: 0.4045em 0;  }
-#header .menu li a { text-decoration: none; padding: 0 0.809em 0 0.409em; color: #666; border-right: 1px solid #CCC;  }
+#header .menu li { display: inline-block; list-style: outside none; padding: 0.4045em 0; }
+#header .menu li a { text-decoration: none; padding: 0 0.809em; color: #666;  }
+#header .menu li a:hover { color: #111; text-decoration: underline; }
 #header .menu li:last-child a { border-right: none; }
 
 #footer { overflow: hidden; color: #888; }
@@ -42,17 +42,63 @@ a { color: #444; }
 
 .entry .entry-content { width: 74.112%; float: left; text-shadow: #FFF 1px 1px 1px; }
 
-.home #header { padding-left: 0; padding-right: 0; padding-bottom: 0; }
-.home #header #site-description { font-size: 1.8em; padding-bottom: 1em; border-bottom: 1px solid #CCC; text-shadow: #FFF 1px 1px 0; }
-.home #header #access .menu ul li { padding: 0.4045em; }
-.home #header #access .menu ul li a:hover { color: #111; text-decoration: underline; }
-
 .single #header { padding: 0.809em 0.809em 0.4045em 0.809em; text-align: left; overflow: hidden; }
-.single #header #site-title { font-size: 1.618em; float: left; }
+.single #header #site-title { font-size: 2.3em; line-height: 1em; float: left; }
 .single #header #site-description { display: none; }
-.single #header #access { float: right; }
+
+.single #header .menu { text-align: right; }
+.single #header .menu li a:hover { text-decoration: underline; color: #222; }
 
 .single .entry { margin-top: 1.618em; }
 .single .entry .entry-header { margin-left: 0; padding-bottom: 0; margin-bottom: 1.618em; border-bottom: 2px solid #CCC; text-shadow: #FFF 1px 1px 1px; }
 .single .entry .entry-header .meta { padding-top: 6.75em; }
 
+/*
+ * Forms
+ * ------------------------------------------------------------------------- */
+form { }
+form input,
+form textarea,
+form label { display: block}
+
+form input,
+form textarea { border:none; border-bottom: 1px solid #999; background: none; outline: none; padding: 0.2em 0.5em 0.1em 0; }
+
+form input:hover,
+form textarea:hover { border-color: #111; background: rgba(255,255,255,0.8); }
+
+form input:focus,
+form textarea:focus { border-color: #222; background: rgba(255,255,255,0.2); }
+/*
+ * Comments
+ * ------------------------------------------------------------------------- */
+
+#comments { }
+#comments #comments-title { padding: 1.618em 0 0.2em 25.888%; }
+#comments .commentlist { margin-bottom: 2.618em;  }
+#comments .commentlist li.comment { overflow: hidden; display: block; list-style: none outside; clear: both; border-top: 1px solid #CCC; padding-top: 1.6em; }
+#comments .commentlist li.comment .comment-header { width: 21.888%; margin-right: 4%; float: left; text-align: right; color: #888;  }
+#comments .commentlist li.comment .comment-header a { color: #666; text-decoration: none; }
+#comments .commentlist li.comment .comment-header .comment-author { display: block; clear: both; }
+#comments .commentlist li.comment .comment-header .comment-author a { color: #222; }
+#comments .commentlist li.comment .comment-header .comment-author .author-name { display: block; clear: both; padding-bottom: 0.908em }
+#comments .commentlist li.comment .comment-header .comment-author img { display: block; float: right; clear: both; margin-bottom: 0.4em; }
+#comments .commentlist li.comment .comment-header .comment-meta { display: block; padding-bottom: 1.5em; font-size: 0.8em; }
+#comments .commentlist li.comment .comment-content { width: 74.112%; float: left; }
+#comments .commentlist li.comment .comment-content .reply { display: none; }
+
+#comments #respond { }
+#comments #respond #reply-title { padding-left: 25.888%; padding-bottom: 0.2em; border-bottom: 1px solid #CCC; margin-bottom: 0.908em; }
+#comments #respond #commentform { padding-left: 25.888%; }
+#comments #respond #commentform p { text-indent: 0; clear: both; overflow: hidden; }
+#comments #respond #commentform p label { width: 15%; padding-top: 0.3em; margin-right: 3%; }
+#comments #respond #commentform p input,
+#comments #respond #commentform p label { float: left; }
+#comments #respond #commentform .required,
+#comments #respond #commentform .comment-notes { display: none; }
+#comments #respond #commentform .logged-in-as { }
+#comments #respond #commentform .comment-form-comment textarea { width: 95%; height: 60px; padding: 0.5em; }
+#comments #respond #commentform .comment-form-comment textarea:focus { height: 300px; }
+#comments #respond #commentform .form-allowed-tags { display: none; }
+#comments #respond #commentform .form-submit #submit { border: none; font-size: 1.616em; }
+#comments #respond #commentform .form-submit #submit:hover { background: none; cursor: pointer; text-decoration: underline; }

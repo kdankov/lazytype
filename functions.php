@@ -2,7 +2,8 @@
 
 add_filter('gallery_style', create_function('$a', 'return preg_replace("%<style type=\'text/css\'>(.*?)</style>%s", "", $a);'));
 
-wp_enqueue_script( 'grid', get_bloginfo( 'stylesheet_directory' ) . '/grid/hashgrid.js', array('jquery') );
+wp_enqueue_script( 'lazytype-grid', get_bloginfo( 'stylesheet_directory' ) . '/grid/hashgrid.js', array('jquery') );
+// wp_enqueue_script( 'lazytype-common', get_bloginfo( 'stylesheet_directory' ) . '/scripts/common.js', array('jquery') );
 
 if ( function_exists( 'add_theme_support' ) ) {
 
@@ -54,5 +55,33 @@ function lazytype_remove_recent_comments_style() {
 	add_filter( 'show_recent_comments_widget_style', '__return_false' );
 }
 add_action( 'widgets_init', 'lazytype_remove_recent_comments_style' );
+
+function lazytype_comment($comment, $args, $depth) {
+	$GLOBALS['comment'] = $comment; ?>
+	<li <?php comment_class(); ?> id="comment-<?php comment_ID() ?>">
+		<span class="comment-header">
+			<span class="comment-author vcard" data-gravatar-hash="<?php echo md5( strtolower( trim( get_comment_author_email() ) ) ); ?>">
+				<span class="author-name"><?php echo get_comment_author_link(); ?></span>
+			</span>
+			<span class="comment-meta">
+				<a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
+					<span class="day-of-the-week"><?php echo get_comment_date('l'); ?>,</span> <span class="date"><?php echo get_comment_date('F jS'); ?></span><br>
+					<span class="time">at <?php echo get_comment_time(); ?></span>
+				</a>
+				<span class="edit"><?php edit_comment_link(__('(Edit)'),'  ','') ?></span>
+			</span>
+		</span>
+		<span class="comment-content">
+			<?php comment_text() ?>
+			<?php if ($comment->comment_approved == '0') : ?>
+				<em><?php _e('Your comment is awaiting moderation.') ?></em>
+			<?php endif; ?>
+			<span class="reply">
+				<?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+			</span>
+		</span>
+	</li>
+<?php
+}
 
 ?>
