@@ -6,7 +6,7 @@
 
 		global $page, $paged;
 
-		wp_title( '|', true, 'right' );
+		/* wp_title( '|', true, 'right' ); */
 
 		// Add the blog name.
 		bloginfo( 'name' );
