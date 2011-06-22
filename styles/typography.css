@@ -25,4 +25,5 @@ ul > li { list-style: outside disc; }
 ol > li { list-style: outside decimal; }
 
 dl { padding-bottom: 0.908em; }
-dl dd { padding: 0 0 0 0.908em; }
+dl dt { padding-bottom: 0.4em; }
+dl dd { padding: 0 0 0.4em 0.908em; }
