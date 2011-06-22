@@ -5,7 +5,7 @@ table, td, th { font: 16px/1.4em "FontinRegular", "Lucida Grande", Lucida, Georg
 h1, h2, h3, h4, h5, h6 { font: normal 1em/1.3em "FontinRegular", "Lucida Grande", Georgia, serif; }
 h4, h5, h6 { font-family: "FontinRegular", "Lucida Grande", Lucida, Georgia, serif; }
 
-strong { font-family: "FontinBold", "Lucida Grande", Georgia, serif; font-weight: normal; color: #333; font-size-adjust: 0.52; }
+strong, dt { font-family: "FontinBold", "Lucida Grande", Georgia, serif; font-weight: normal; color: #333; font-size-adjust: 0.52; }
 blockquote, em { font-family: "FontinItalic", "Lucida Grande", Georgia, serif; font-style: normal; color: #666; font-size-adjust: 0.508; }
 .single #header #site-title { font-family: "FontinSmallCaps", "FontinRegular", "Lucida Grande", serif; }
 
@@ -24,3 +24,5 @@ ul ul, ol ol, ul ol, ol ul, blockquote { padding: 0.809em 1.618em; }
 ul > li { list-style: outside disc; }
 ol > li { list-style: outside decimal; }
 
+dl { padding-bottom: 0.908em; }
+dl dd { padding: 0 0 0 0.908em; }
