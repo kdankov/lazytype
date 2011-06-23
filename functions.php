@@ -2,7 +2,7 @@
 
 add_filter('gallery_style', create_function('$a', 'return preg_replace("%<style type=\'text/css\'>(.*?)</style>%s", "", $a);'));
 
-wp_enqueue_script( 'lazytype-grid', get_bloginfo( 'stylesheet_directory' ) . '/grid/hashgrid.js', array('jquery') );
+// wp_enqueue_script( 'lazytype-grid', get_bloginfo( 'stylesheet_directory' ) . '/grid/hashgrid.js', array('jquery') );
 // wp_enqueue_script( 'lazytype-common', get_bloginfo( 'stylesheet_directory' ) . '/scripts/common.js', array('jquery') );
 
 if ( function_exists( 'add_theme_support' ) ) {
