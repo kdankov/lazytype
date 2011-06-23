@@ -1,8 +1,10 @@
 <?php get_header(); ?>
 
-	<div id="welcome">
-		<?php dynamic_sidebar( 'quotes' ); ?>
-	</div>
+	<?php if( is_home() && false ){ ?>
+		<div id="welcome">
+			<?php dynamic_sidebar( 'homepage' ); ?>
+		</div>
+	<?php } ?>
 
 	<div id="container">
 		<div id="content" role="main">
