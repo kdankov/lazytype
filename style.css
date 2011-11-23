@@ -6,8 +6,4 @@ Author: Konstantin Dankov
 Version: 1.2
 */
 
-@import url(fonts/fonts.css);
-@import url(styles/reset.css);
-@import url(styles/typography.css);
-@import url(styles/elements.css);
-@import url(styles/mediaqueries.css);
+

@@ -1,7 +1,6 @@
 body, form, input, select, option, button, textarea,
 table, td, th { font: 16px/1.4em "FontinRegular", "Lucida Grande", Lucida, Georgia, serif; font-size-adjust: 0.508; }
 
-#site-title,
 h1, h2, h3, h4, h5, h6 { font: normal 1em/1.3em "FontinRegular", "Lucida Grande", Georgia, serif; }
 h4, h5, h6 { font-family: "FontinRegular", "Lucida Grande", Lucida, Georgia, serif; }
 
@@ -9,21 +8,26 @@ strong, dt { font-family: "FontinBold", "Lucida Grande", Georgia, serif; font-we
 blockquote, em { font-family: "FontinItalic", "Lucida Grande", Georgia, serif; font-style: normal; color: #666; font-size-adjust: 0.508; }
 .single #header #site-title { font-family: "FontinSmallCaps", "FontinRegular", "Lucida Grande", serif; }
 
-h1 { font-size: 4.236em; }
-h2 { font-size: 2.618em; }
+h1 { font-size: 3.136em; }
+h2 { font-size: 2.418em; }
 h3 { font-size: 1.618em; }
 h4 { font-size: 1.236em; }
 h5 { font-size: 1.136em; font-weight: bold; }
 h6 { font-size: 1.0em; font-weight: bold; }
 
-p, ol, ul { padding: 0 0 1.5em 0; }
+p, ol, ul { padding: 0 0 1.5em 0; margin: 0;  }
 li { display: list-item; padding-bottom: 0.4045em; }
 li:last-child { padding-bottom: 0; }
 
-ul ul, ol ol, ul ol, ol ul, blockquote { padding: 0.809em 1.618em; }
+blockquote { background: #FFF; border-radius: 0.6em; margin: 0 0.5em;  }
+blockquote p:last-child { padding: 0; }
+ul ul, ol ol, ul ol, ol ul, blockquote { padding: 0.6em 1em; margin-bottom: 1em;  }
+p + blockquote { margin-top: 0; }
 ul > li { list-style: outside disc; }
 ol > li { list-style: outside decimal; }
 
 dl { padding-bottom: 0.908em; }
 dl dt { padding-bottom: 0.4em; }
 dl dd { padding: 0 0 0.4em 0.908em; }
+
+#site-title { margin: 0.2em 0 0 0; }

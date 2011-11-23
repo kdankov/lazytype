@@ -1,57 +1,65 @@
+/* --- Common --------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 body { background: url(images/handmadepaper.png) left top repeat; color: #444; }
 a { color: #444; }
 
-#wrapper { width: 80%; max-width: 800px; margin: 0 auto 1.618em auto; }
+/* --- Layout --------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+#wrapper {  }
 
-#container { padding: 2.618em; border: solid #CCC; border-width: 4px 0; }
-
-#header { text-align: center; overflow: hidden; padding: 1.618em 0 0 0; }
-#header #site-title { font-size: 6.854em; line-height: 1em; }
+#header { text-align: center; overflow: hidden; border-bottom: 1px solid #FFF; }
+#header #site-title {  }
 #header #site-title a { display: block; text-decoration: none; color: #333; text-shadow: #FFF 2px 2px 0; }
 #header #site-title a:hover { color: #000; }
-#header #site-description { font-size: 1.8em; padding-bottom: 1em; border-bottom: 1px solid #CCC; text-shadow: #FFF 1px 1px 0; }
+#header #site-description {  text-shadow: #FFF 1px 1px 0; border-bottom: 1px solid #CCC; padding-bottom: 1em;  }
 
-#header .menu { padding: 0.3em 0 0 0; }
-#header .menu li { display: inline-block; list-style: outside none; padding: 0.4045em 0; }
-#header .menu li a { text-decoration: none; padding: 0 0.809em; color: #666;  }
+#header .navigation { border-bottom: 1px solid #CCC; padding: 0.6em 0; border-top: 1px solid #FFF;  }
+#header .menu { margin: 0; padding: 0; text-align: center;   }
+#header .menu li { display: inline-block; padding: 0; margin: 0;   }
+#header .menu li:after { content: ' ❖ '; padding: 0 0.5em 0 0.4em; }
+#header .menu li:last-child:after { content: ''; }
+#header .menu li a { text-decoration: none; color: #666;  }
 #header .menu li a:hover { color: #111; text-decoration: underline; }
 #header .menu li:last-child a { border-right: none; }
 
-#footer { overflow: hidden; color: #888; }
+#main { overflow: hidden;  }
+
+#footer { overflow: hidden; color: #888; padding-top: 1em; font-size: 0.9em; line-height: 1.4em;  }
 #footer a { text-decoration: none; color: #888; }
 #footer a:hover { color: #111; text-decoration: underline; }
-#footer #site-generator { float: right; }
-#footer .widgets { padding: 1.618em; border-bottom: 4px solid #CCC }
-#footer #colophon { padding: 0.809em 1.618em; }
-#footer #colophon a { font-size: 0.809em; }
+#footer #colophon { border-bottom: 1px solid #CCC; padding-bottom: 1em;   }
+#footer #colophon a {  }
+#footer #site-generator { border-top: 1px solid #FFF; padding: 0.5em 0; text-align: right; font-size: 0.8em; }
 
-#welcome { padding: 2.618em; border-top: 4px solid #CCC; overflow: hidden; }
-#welcome p:last-child { padding-bottom: 0; }
+#welcome {  }
+#welcome p:last-child {  }
 
-#welcome .widget { width: 45%; float: left; }
-#welcome .widget:first-child { margin-right: 10%; }
+#welcome .widget { }
+#welcome .widget:first-child { }
 
-.entry { overflow: hidden; }
+.entry { overflow: hidden; border-bottom: 1px solid #FFF;  }
 
-.entry .entry-header { margin-left: 25.888%; }
+.entry .entry-header { padding-top: 1em; padding-bottom: 0.3em; }
 .entry .entry-header a { text-decoration: none; }
 .entry .entry-header a:hover { color: #000; text-decoration: underline; }
 
-.entry .meta { width: 21.888%; margin-right: 4%; float: left; text-align: right; color: #888; }
-.entry .meta .day-of-the-week { display: block; }
+.entry .meta {  color: #888; padding-bottom: 0.3em;  }
+.entry .meta .day-of-the-week {  }
 
-.entry .entry-content { width: 74.112%; float: left; text-shadow: #FFF 1px 1px 1px; }
+.entry .entry-content { text-shadow: #FFF 1px 1px 1px; overflow: hidden; padding-bottom: 1em;   }
+.entry .entry-footer { clear: both;  border-bottom: 1px solid #CCC; }
 
-.single #header { padding: 0.809em 0.809em 0.4045em 0.809em; text-align: left; overflow: hidden; }
-.single #header #site-title { font-size: 2.3em; line-height: 1em; float: left; }
-.single #header #site-description { display: none; }
+.page #header,
+.single #header { text-align: left; overflow: hidden; padding-top: 1em; }
+.page #header #site-title,
+.single #header #site-title { display: inline-block; }
+.page #header #site-description,
+.single #header #site-description {  text-align: right; margin-top: -1.8em;  font-size: 0.9em;   }
 
-.single #header .menu { text-align: right; }
-.single #header .menu li a:hover { text-decoration: underline; color: #222; }
+.single .entry {  }
+.single .entry .entry-header { text-shadow: #FFF 1px 1px 1px; margin-left: 0; }
+.single .entry .entry-header .meta { }
 
-.single .entry { margin-top: 1.618em; }
-.single .entry .entry-header { margin-left: 0; padding-bottom: 0; margin-bottom: 1.618em; border-bottom: 2px solid #CCC; text-shadow: #FFF 1px 1px 1px; }
-.single .entry .entry-header .meta { padding-top: 6.75em; }
+.page .entry { padding-top: 1em; }
+.page .entry .meta * { visibility: hidden; }
 
 /*
  * Forms
@@ -69,14 +77,15 @@ form textarea:hover { border-color: #111; background: rgba(255,255,255,0.8); }
 
 form input:focus,
 form textarea:focus { border-color: #222; background: rgba(255,255,255,0.2); }
+
 /*
  * Comments
  * ------------------------------------------------------------------------- */
-
 #comments { }
 #comments #comments-title { padding: 1.618em 0 0.2em 25.888%; }
-#comments .commentlist { margin-bottom: 2.618em;  }
-#comments .commentlist li.comment { overflow: hidden; display: block; list-style: none outside; clear: both; border-top: 1px solid #CCC; padding-top: 1.6em; }
+#comments .commentlist { margin-bottom: 2.618em; border-bottom: 1px solid #FFF; padding: 0;  }
+#comments .commentlist li.comment { overflow: hidden; display: block; list-style: none outside; clear: both; padding-top: 1.6em; }
+#comments .commentlist li.comment:last-child { border-bottom: 1px solid #CCC; }
 #comments .commentlist li.comment .comment-header { width: 21.888%; margin-right: 4%; float: left; text-align: right; color: #888;  }
 #comments .commentlist li.comment .comment-header a { color: #666; text-decoration: none; }
 #comments .commentlist li.comment .comment-header .comment-author { display: block; clear: both; }
@@ -87,9 +96,9 @@ form textarea:focus { border-color: #222; background: rgba(255,255,255,0.2); }
 #comments .commentlist li.comment .comment-content { width: 74.112%; float: left; }
 #comments .commentlist li.comment .comment-content .reply { display: none; }
 
-#comments #respond { }
-#comments #respond #reply-title { padding-left: 25.888%; padding-bottom: 0.2em; border-bottom: 1px solid #CCC; margin-bottom: 0.908em; }
-#comments #respond #commentform { padding-left: 25.888%; }
+#comments #respond { padding-top: 1em; border-bottom: 1px solid #FFF;  }
+#comments #respond #reply-title { padding-left: 25.888%; padding-bottom: 0.2em; margin-bottom: 0.908em; }
+#comments #respond #commentform { padding-left: 25.888%; border-bottom: 1px solid #CCC;  }
 #comments #respond #commentform p { text-indent: 0; clear: both; overflow: hidden; }
 #comments #respond #commentform p label { width: 15%; padding-top: 0.3em; margin-right: 3%; }
 #comments #respond #commentform p input,
@@ -100,5 +109,7 @@ form textarea:focus { border-color: #222; background: rgba(255,255,255,0.2); }
 #comments #respond #commentform .comment-form-comment textarea { width: 95%; height: 60px; padding: 0.5em; }
 #comments #respond #commentform .comment-form-comment textarea:focus { height: 300px; }
 #comments #respond #commentform .form-allowed-tags { display: none; }
-#comments #respond #commentform .form-submit #submit { border: none; font-size: 1.616em; }
+#comments #respond #commentform .form-submit { position: relative; }
+#comments #respond #commentform .form-submit #submit { border: none; font-size: 1.616em; display: inline-block; margin-left: 2.2em;  }
+#comments #respond #commentform .form-submit:before { display: block; content: '☞ '; position: absolute; left: 0; top: 14px; font-size: 3em;  }
 #comments #respond #commentform .form-submit #submit:hover { background: none; cursor: pointer; text-decoration: underline; }
