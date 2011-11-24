@@ -11,7 +11,9 @@
 			<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Licensed under Creative Commons - Attribution-NonCommercial-ShareAlike 3.0</a>
 		</div>
 		<div id="site-generator">
-			<?php do_action( 'twentyten_credits' ); ?>
+
+			<a href="http://dankov.name">Theme by Konstantin Dankov</a> &nbsp;|&nbsp;
+			<a href="http://www.exljbris.com">Fonts by Jos Buivenga (exljbris)</a> &nbsp;|&nbsp;
 			<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>
 		</div>
 	</div>
