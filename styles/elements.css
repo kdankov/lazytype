@@ -47,10 +47,13 @@ a { color: #444; }
 .entry .entry-content { text-shadow: #FFF 1px 1px 1px; overflow: hidden; padding-bottom: 1em;   }
 .entry .entry-footer { clear: both;  border-bottom: 1px solid #CCC; }
 
+.custom-post-type-archive #header,
 .page #header,
 .single #header { text-align: left; overflow: hidden; padding-top: 1em; }
+.custom-post-type-archive #header #site-title,
 .page #header #site-title,
 .single #header #site-title { display: inline-block; }
+.custom-post-type-archive #header #site-description,
 .page #header #site-description,
 .single #header #site-description {  text-align: right; margin-top: -1.8em;  font-size: 0.9em;   }
 
@@ -60,6 +63,20 @@ a { color: #444; }
 
 .page .entry { padding-top: 1em; }
 .page .entry .meta * { visibility: hidden; }
+
+.custom-post-type-quotes-archive { }
+.single-quotes #content,
+.custom-post-type-quotes-archive #content { margin: 3em auto;  }
+.single-quotes #footer,
+.custom-post-type-quotes-archive #footer { border-top: 1px solid #CCC; padding: 0; }
+.single-quotes #footer #colophon,
+.custom-post-type-quotes-archive #footer #colophon { padding-top: 1em; border-top: 1px solid #FFF; }
+.custom-post-type-quotes-archive .quote { border-bottom: 1px solid #FFF; }
+.custom-post-type-quotes-archive .quote .entry-header { padding-top: 2em; padding-bottom: 0.5em; }
+.custom-post-type-quotes-archive .quote .quote-content { border-bottom: 1px solid #CCC; padding-bottom: 2em; }
+.custom-post-type-quotes-archive .quote h3 a { text-decoration: none; }
+.single-quotes .quote blockquote, 
+.custom-post-type-quotes-archive .quote blockquote { background: none; margin: 0; padding: 0 0.75em; }
 
 /*
  * Forms

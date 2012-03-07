@@ -100,6 +100,8 @@ body { /* 16px / 24px */
 *
 */
 #wrapper { margin: 0 5.555555555555555%; }
+.single-quotes #content,
+.custom-post-type-quotes-archive #content,
 .entry-header, .entry-content, .entry .meta, #footer #colophon, #footer #site-generator { padding-left: 0.75em; padding-right: 0.75em;  }
 h1, h2 { margin: 0 0 0.3em 0; }
 h2 { font-weight: normal; }
@@ -159,7 +161,12 @@ h2 { font-weight: normal; }
 	.entry .meta .inner { padding: 0 0.75em; }
 	.entry .meta .date,
 	.entry .meta .day-of-the-week { display: block; }
-	.entry .entry-content { width: 66.6%; float: left; padding-left: 0; padding-right: 0;   }
+
+	.custom-post-type-quotes-archive #content,
+	.single-quotes #content,
+	.entry .entry-content { width: 66.6%; }
+
+	.entry .entry-content { float: left; padding-left: 0; padding-right: 0;   }
 	.entry .entry-content .inner { padding: 0 0.75em; }
 
 	.single .entry .entry-header { margin-left: 16.6%; 	}
@@ -169,11 +176,15 @@ h2 { font-weight: normal; }
 
 @media screen and (min-width: 75em) { /* @media screen and (min-width: 1200px) */
 
+	.custom-post-type-quotes-archive #content,
+	.single-quotes #content,
 	.entry .entry-content { width: 50%;  }
 
 }
 
 @media screen and (min-width: 105em) { /* @media screen and (min-width: 1680px) */
+
 	.single .entry .entry-header { margin-left: 33.3%; 	}
+
 }
 
