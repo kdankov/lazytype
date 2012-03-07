@@ -1,6 +1,6 @@
 jQuery(function(){
-	jQuery(".home #site-title").fitText(0.8);
-	jQuery(".home #site-description").fitText(3);
+	jQuery(".home #site-title").fitText(1);
+	jQuery(".home #site-description").fitText(2.35);
 });
 
 jQuery(window).load(function() {

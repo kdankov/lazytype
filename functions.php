@@ -7,7 +7,7 @@ wp_enqueue_script( 'lazytype-fittext', get_bloginfo( 'stylesheet_directory' ) . 
 wp_enqueue_script( 'lazytype-common', get_bloginfo( 'stylesheet_directory' ) . '/scripts/common.js', array('jquery') );
 
 if(!is_admin()){
-	wp_enqueue_style( 'lazytype-fonts', get_bloginfo( 'stylesheet_directory' ) . '/fonts/fonts.css' );
+	//wp_enqueue_style( 'lazytype-fonts', get_bloginfo( 'stylesheet_directory' ) . '/fonts/fonts.css' );
 	wp_enqueue_style( 'lazytype-typography', get_bloginfo( 'stylesheet_directory' ) . '/styles/typography.css' );
 	wp_enqueue_style( 'lazytype-elements', get_bloginfo( 'stylesheet_directory' ) . '/styles/elements.css' );
 	wp_enqueue_style( 'lazytype-ggs', get_bloginfo( 'stylesheet_directory' ) . '/styles/ggs.css' );

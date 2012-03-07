@@ -1,12 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Serif&subset=latin,cyrillic);
+
 body, form, input, select, option, button, textarea,
-table, td, th { font: 16px/1.4em "FontinRegular", "Lucida Grande", Lucida, Georgia, serif; font-size-adjust: 0.508; }
+table, td, th { font: 16px/1.4em "PT Serif", "Lucida Grande", Lucida, Georgia, serif; font-size-adjust: 0.508; }
 
-h1, h2, h3, h4, h5, h6 { font: normal 1em/1.3em "FontinRegular", "Lucida Grande", Georgia, serif; }
-h4, h5, h6 { font-family: "FontinRegular", "Lucida Grande", Lucida, Georgia, serif; }
+h1, h2, h3, h4, h5, h6 { font: normal 1em/1.3em "PT Serif", "Lucida Grande", Georgia, serif; }
+h4, h5, h6 { font-family: "PT Serif", "Lucida Grande", Lucida, Georgia, serif; }
 
-strong, dt { font-family: "FontinBold", "Lucida Grande", Georgia, serif; font-weight: normal; color: #333; font-size-adjust: 0.52; }
-blockquote, em { font-family: "FontinItalic", "Lucida Grande", Georgia, serif; font-style: normal; color: #666; font-size-adjust: 0.508; }
-.single #header #site-title { font-family: "FontinSmallCaps", "FontinRegular", "Lucida Grande", serif; }
+strong, dt { font-family: "PT Serif", "Lucida Grande", Georgia, serif; font-weight: normal; color: #333; font-size-adjust: 0.52; }
+blockquote, em { font-family: "PT Serif", "Lucida Grande", Georgia, serif; font-style: normal; color: #666; font-size-adjust: 0.508; }
+.single #header #site-title { font-family: "PT Serif", "FontinRegular", "Lucida Grande", serif; }
 
 h1 { font-size: 3.136em; }
 h2 { font-size: 2.418em; }
