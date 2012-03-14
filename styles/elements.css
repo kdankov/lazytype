@@ -78,6 +78,12 @@ a { color: #444; }
 .single-quotes .quote blockquote, 
 .custom-post-type-quotes-archive .quote blockquote { background: none; margin: 0; padding: 0 0.75em; }
 
+#nav-below { border-bottom: 1px solid #FFF; overflow: hidden;  }
+#nav-below > div { width: 50%; float: left; overflow: hidden; border-bottom: 1px solid #CCC;  }
+#nav-below a { display: block; padding: 2em; text-decoration: none;  }
+#nav-below a:hover { text-decoration: underline; }
+#nav-below .nav-next { text-align: right; }
+
 /*
  * Forms
  * ------------------------------------------------------------------------- */
