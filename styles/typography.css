@@ -11,12 +11,13 @@ blockquote, em { font-family: "PT Serif", "Lucida Grande", Georgia, serif; font-
 .single #header #site-title { font-family: "PT Serif", "FontinRegular", "Lucida Grande", serif; }
 
 h1 { font-size: 3.136em; }
-h2 { font-size: 2.418em; }
+h2 { font-size: 2.218em; }
 h3 { font-size: 1.618em; }
 h4 { font-size: 1.236em; }
 h5 { font-size: 1.136em; font-weight: bold; }
 h6 { font-size: 1.0em; font-weight: bold; }
 
+h3 + ul { padding-top: 1em; }
 p, ol, ul { padding: 0 0 1.5em 0; margin: 0;  }
 li { display: list-item; padding-bottom: 0.4045em; }
 li:last-child { padding-bottom: 0; }
@@ -25,11 +26,11 @@ blockquote { background: #FFF; border-radius: 0.6em; margin: 0 0.5em;  }
 blockquote p:last-child { padding: 0; }
 ul ul, ol ol, ul ol, ol ul, blockquote { padding: 0.6em 1em; margin-bottom: 1em;  }
 p + blockquote { margin-top: 0; }
-ul > li { list-style: outside disc; }
-ol > li { list-style: outside decimal; }
+ul > li { list-style: outside disc; margin-left: 1.8em;}
+ol > li { list-style: outside decimal;  margin-left: 1.8em;   }
 
 dl { padding-bottom: 0.908em; }
 dl dt { padding-bottom: 0.4em; }
 dl dd { padding: 0 0 0.4em 0.908em; }
-
+pre { margin: 1em 0 2em 0; }
 #site-title { margin: 0.2em 0 0 0; }
